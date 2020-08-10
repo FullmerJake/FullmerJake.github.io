@@ -67,8 +67,6 @@ p{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
-/* About Me Style */
 .bio p{
     line-height: 1.7;
     color: black;
@@ -77,8 +75,6 @@ p{
     margin: 0 auto;
     text-align: center;
 }
-
-/* What I've Done Style */
 .section-title{
     font-size: 48px;
     color: black;
@@ -94,11 +90,12 @@ p{
 .secondary-border{
     border-color: #39a6b2;
 }
-
-
 .profile-pic img{
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
 
 .projects{
@@ -130,14 +127,6 @@ p{
 .project-shoutout p{
     font-size: 17px;
 }
-
-
-
-
-
-
-
-
 .contact{
     background: #024e76;
 }
@@ -172,13 +161,9 @@ p{
     padding:  15px 0;
     font-size: 16px;
 }
-
-
 .text-center{
     text-align: center;
 }
-
-
 
 /* Media Query for smaller desktop screens and smaller*/
 @media screen and (max-width: 980px) {
