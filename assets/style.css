@@ -43,6 +43,12 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+header nav ul li a:hover {
+    background: green;
+    color: ivory;
+    border-radius: 15px;
+    text-shadow: none;
+}
 footer {
     background: blanchedalmond;
     width: 100%;
@@ -136,9 +142,14 @@ p{
     color: #fce138;
 }
 .project-shoutout h3{
+    border-radius: 15%;
     font-size: 28px;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+.project-shoutout h3:hover{
+    background-color: green;
 }
 .project-shoutout p{
     font-size: 17px;
@@ -168,6 +179,11 @@ p{
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
+    background-color: rgba(225,225,225,.75);
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(225,225,225,1);
+    outline: none;
 }
 .contact-form button{
     width: 100%;
@@ -178,6 +194,10 @@ p{
     padding:  15px 0;
     font-size: 16px;
     border-radius: 10px;
+}
+.contact-form button:hover {
+    background-color: green;
+    color: ivory;
 }
 .text-center{
     text-align: center;
