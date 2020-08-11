@@ -22,6 +22,7 @@ header h1 {
     font-size: 50px;
     color: black;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
     text-decoration: none;
@@ -98,7 +99,8 @@ p{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .projects{
@@ -113,12 +115,16 @@ p{
     background: #024e76;
     color: #fce138;
     flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .showcase{
     margin: 20px;
     background: #024e76;
     color: #fce138;
     flex: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-shoutout{
@@ -132,11 +138,7 @@ p{
 .project-shoutout h3{
     font-size: 28px;
     text-align: center;
-}
-.project-shoutout h4{
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .project-shoutout p{
     font-size: 17px;
@@ -165,6 +167,7 @@ p{
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
 }
 .contact-form button{
     width: 100%;
@@ -174,6 +177,7 @@ p{
     text-align: center;
     padding:  15px 0;
     font-size: 16px;
+    border-radius: 10px;
 }
 .text-center{
     text-align: center;
