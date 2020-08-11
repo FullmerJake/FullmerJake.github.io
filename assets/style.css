@@ -114,6 +114,12 @@ p{
     color: #fce138;
     flex: 1;
 }
+.showcase{
+    margin: 20px;
+    background: #024e76;
+    color: #fce138;
+    flex: 2;
+}
 
 .project-shoutout{
     padding: 25px;
@@ -125,6 +131,7 @@ p{
 }
 .project-shoutout h3{
     font-size: 28px;
+    text-align: center;
 }
 .project-shoutout h4{
     font-weight: lighter;
