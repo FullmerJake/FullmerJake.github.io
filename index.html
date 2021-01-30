@@ -96,40 +96,26 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<?php
-								$action=$_REQUEST['action'];
-								if ($action=="")    /* display the contact form */
-									{
-									?>
-									<form  action="" method="POST" enctype="multipart/form-data">
-									<input type="hidden" name="action" value="submit">
-									Your name:<br>
-									<input name="name" type="text" value="" size="30"/><br>
-									Your email:<br>
-									<input name="email" type="text" value="" size="30"/><br>
-									Your message:<br>
-									<textarea name="message" rows="7" cols="30"></textarea><br>
-									<input type="submit" value="Send email"/>
-									</form>
-									<?php
-									} 
-								else                /* send the submitted data */
-									{
-									$name=$_REQUEST['name'];
-									$email=$_REQUEST['email'];
-									$message=$_REQUEST['message'];
-									if (($name=="")||($email=="")||($message==""))
-										{
-										echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-										}
-									else{		
-										$from="From: $name<$email>\r\nReturn-path: $email";
-										$subject="Message sent using your contact form";
-										// mail("youremail@yoursite.com", $subject, $message, $from);
-										echo "Email sent!";
-										}
-									}  
-								?>
+								<form method="post" action="my-simple-php-contact-form.php">
+									<div class="fields">
+										<div class="field half">
+											<label for="Name">Name</label>
+											<input type="text" name="Name" id="Name" />
+										</div>
+										<div class="field half">
+											<label for="Email">Email</label>
+											<input type="text" name="Email" id="Email" />
+										</div>
+										<div class="field">
+											<label for="Message">Message</label>
+											<textarea name="Message" id="Message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
 								<ul class="icons">
 									<li><a href="https://twitter.com/DakkaMournival" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://www.facebook.com/jake.fullmer.3/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
